@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Common Elements between Two Arrays</title>
+</head>
+<body>
+    <script>
+        let inputArray1 = prompt("Enter elements of Array1 separated by commas:");
+        let inputArray2 = prompt("Enter elements of Array2 separated by commas:");
+
+        let array1 = inputArray1.split(',').map(Number);
+        let array2 = inputArray2.split(',').map(Number);
+
+        let commonElements = array1.filter(num => array2.includes(num));
+
+        if (commonElements.length > 0) {
+            document.write("Common elements between two arrays: " + commonElements.join(', '));
+        } else {
+            document.write("No common elements found.");
+        }
+    </script>
+</body>
+</html>

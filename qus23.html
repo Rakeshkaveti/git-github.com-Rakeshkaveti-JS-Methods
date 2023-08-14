@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Numbers and Odd Numbers</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }   
+
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 15%;
+        }
+        
+
+        .even {
+            color: rgb(214, 214, 39);
+        }
+
+        .odd {
+            color: rgb(185, 185, 40);
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        let input = prompt("Enter the numbers seperated by commas here:");
+
+        let inputArray = input.split(',');
+
+        let numbersArray = inputArray.map(Number);
+        
+        let evennumbers = numbersArray.filter( num => num % 2 === 0);
+
+        let oddnumbers = numbersArray.filter(num => num % 2 !== 0);
+
+        document.write("<h1> Even Numbers and odd Numbers: </h1>")
+
+        document.write("<p>Ever Numbers: <span class ='even' > "  + evennumbers.join(',')  + "</span> </br> </p>");
+
+        document.write("<p> Odd Numbers: <span class ='odd' >" + oddnumbers.join(',') + " </span> </p>");
+
+
+    </script>
+</body>
+</html>

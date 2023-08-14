@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to print wishes based on time</title>
+</head>
+<body>
+    <script>
+    let wishes = +prompt ("Enter the time you would like the wishes to be displayed");
+
+    if (wishes <= 12) {
+        alert("Good Morning");
+    }
+
+    else if (wishes >= 12 && wishes <= 18 ) {
+        alert("Good Afternoon");
+    }
+
+    else if (wishes >= 18 && wishes <= 24) {
+        alert("Good Night");
+    }
+
+    else {
+        alert("Enter the time in 24 hours format");
+    }
+
+</script>
+</body>
+</html>

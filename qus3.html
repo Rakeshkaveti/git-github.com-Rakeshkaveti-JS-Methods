@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> check whether a character is alphabet, digit or special character </title>
+</head>
+<body>
+    <script>
+        let input = prompt("Please enter a Charector");
+
+        if ((input >= 'a' && input <= 'z') || (input >= 'A' && input <= 'Z')) {
+        alert("String");
+        }
+
+
+        else if (!isNaN(input)) {
+          alert("Number");
+        }
+
+        else {
+            alert("Special Charector");
+        }
+    </script>
+</body>
+</html>

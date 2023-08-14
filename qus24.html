@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Duplicate Elements in an Array</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Enter numbers separated by commas:");
+        let inputArray = input.split(',').map(Number);
+
+        let duplicateElements = inputArray.filter((num, index) => inputArray.indexOf(num) !== index);
+
+        if (duplicateElements.length > 0) {
+            document.write("Duplicate elements are: " + duplicateElements.join(', '));
+        } else {
+            document.write("No duplicate elements found.");
+        }
+    </script>
+</body>
+</html>

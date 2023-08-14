@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maximum number </title>
+</head>
+<body>
+    <script>
+
+
+        function maximum(a , b, c) {
+            if (a >= b && a >=c ) {
+                return "a is the maximun number";
+            } else if (b >= a && b >= c) {
+                return "b is the maximun number";
+            } else {
+                return "c is the maximum number";
+            }
+        }
+
+        let result1 = maximum( 20, 30, 35);
+        alert("a=20;b=30,c=35: The maimum number among 3 numbers is" + " " + result1 );
+
+        
+        let result2 = maximum( 10, 43, 34);
+        alert("a=10;b=43,c=34: The maimum number among 3 numbers is" + " " + result2 );
+
+        let result3 = maximum( 45, 33, 21);
+        alert("a=45;b=33,c=21: The maimum number among 3 numbers is" + " " + result3 );
+    </script>
+</body>
+</html>

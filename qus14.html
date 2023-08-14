@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program to find how many days in months(if feb is leap year print 29 days)</title>
+</head>
+<body>
+    <script>
+        let year = +prompt("Enter the year");
+        let month = prompt ("Enter the month, Ex: jan, feb ..., dec").toLowerCase();
+
+        switch(month) {
+        case "jan":
+        case "mar":
+        case "may":
+        case "jul": 
+        case "aug": 
+        case "oct": 
+        case "dec":
+        alert("31 days");
+            break;
+        case "apr": 
+        case "jun": 
+        case "sep": 
+        case "nov":
+        alert("30 days");
+            break;
+            // default: 
+            // document.write("Enter months as mentioned to get output jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec");
+            // break;
+        
+        case "feb": 
+         if((year % 4 === 0 && year !== 100) || (year % 400 === 0)) {
+            alert("29 days");
+         } else {
+            alert("28 days");
+         }
+
+         break;
+         default: document.write("Invalid month");
+         break;
+        }
+
+        
+
+    </script>
+</body>
+</html>
